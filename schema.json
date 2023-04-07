@@ -1,0 +1,42 @@
+{
+    "10uniform-lc": {
+        "group-list": [40, 80, 120, 160, 200, 240, 280, 320, 360],
+        "fusing": "LC"
+    },
+    "8uniform": {
+        "group-list": [50, 100, 150, 200, 250, 300, 350]
+    },
+    "8uniform-lc": {
+        "group-list": [50, 100, 150, 200, 250, 300, 350],
+        "fusing": "LC"
+    },
+    "8uniform-ips": {
+        "group-list": [50, 100, 150, 200, 250, 300, 350],
+        "fusing": "IPS"
+    },
+    "4uniform-lc": {
+        "group-list": [100, 200, 300],
+        "fusing": "LC"
+    },
+    "4uniform-ips": {
+        "group-list": [100, 200, 300],
+        "fusing": "IPS"
+    },
+    "4uniform": {
+        "group-list": [100, 200, 300]
+    },
+    "2uniform-ips": {
+        "group-list": [200],
+        "fusing": "IPS"
+    },
+    "2uniform-lc": {
+        "group-list": [200],
+        "fusing": "LC"
+    },
+    "2uniform": {
+        "group-list": [200]
+    },
+    "2nonuniform": {
+        "group-list": [390]
+    }
+}

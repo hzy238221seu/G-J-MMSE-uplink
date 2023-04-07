@@ -1,0 +1,27 @@
+{
+    "tiny": [
+        {
+            "name": "read test",
+            "type": "python",
+            "request": "launch",
+            "program": "channel_reader.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-p",
+                "1000L400N1K40-homo.mat",
+                "-o",
+                "H=H_AP",
+                "-o",
+                "Hhat=Hhat_AP",
+                "-o",
+                "B=B_AP",
+                "-o",
+                "R=R_AP",
+                "-o",
+                "C=C_AP"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        }
+    ]
+}

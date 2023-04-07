@@ -1,0 +1,260 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".show-launch",
+            "type": "python",
+            "request": "launch",
+            "program": ".vscode/show-configurations.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-t",
+                ".vscode/launch.json",
+                "--lauch"
+            ]
+        },
+        {
+            "name": ".configure-g-mmse",
+            "type": "python",
+            "request": "launch",
+            "program": ".vscode/configure-into.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-t",
+                ".vscode\\g-mmse-configurations.json"
+            ]
+        },
+        {
+            "name": ".show-g-mmse",
+            "type": "python",
+            "request": "launch",
+            "program": ".vscode/show-configurations.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-t",
+                ".vscode\\g-mmse-configurations.json"
+            ]
+        },
+        {
+            "name": ".configure-tiny",
+            "type": "python",
+            "request": "launch",
+            "program": ".vscode/configure-into.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-t",
+                ".vscode\\tiny-configurations.json"
+            ]
+        },
+        {
+            "name": ".show-tiny",
+            "type": "python",
+            "request": "launch",
+            "program": ".vscode/show-configurations.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-t",
+                ".vscode\\tiny-configurations.json"
+            ]
+        },
+        {
+            "name": "G-MMSE-test",
+            "type": "python",
+            "request": "launch",
+            "program": "multi-G-MMSE.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--schema",
+                "2uniform",
+                "-n",
+                "1"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        },
+        {
+            "name": "G-MMSE-only",
+            "type": "python",
+            "request": "launch",
+            "program": "multi-G-MMSE.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--schema",
+                "3uniform",
+                "--schema",
+                "4uniform",
+                "--schema",
+                "2uniform",
+                "--schema",
+                "2nonuniform",
+                "-n",
+                "10"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        },
+        {
+            "name": "G-MMSE-lc",
+            "type": "python",
+            "request": "launch",
+            "program": "multi-G-MMSE.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--schema",
+                "8uniform",
+                "--schema",
+                "8uniform-lc",
+                "--schema",
+                "4uniform",
+                "--schema",
+                "4uniform-lc",
+                "--schema",
+                "2uniform",
+                "--schema",
+                "2uniform-lc",
+                "-n",
+                "10"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        },
+        {
+            "name": "G-MMSE-ips",
+            "type": "python",
+            "request": "launch",
+            "program": "multi-G-MMSE.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--schema",
+                "8uniform",
+                "--schema",
+                "8uniform-ips",
+                "--schema",
+                "4uniform",
+                "--schema",
+                "4uniform-ips",
+                "--schema",
+                "2uniform",
+                "--schema",
+                "2uniform-ips",
+                "-n",
+                "10"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        },
+        {
+            "name": "Z-research2",
+            "type": "python",
+            "request": "launch",
+            "program": "Z-research.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-s",
+                "data/L100N4K40p100-homo",
+                "--schema",
+                "2uniform-ips",
+                "-n",
+                "3"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        },
+        {
+            "name": "Z-research4",
+            "type": "python",
+            "request": "launch",
+            "program": "Z-research.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-s",
+                "data/L100N4K40p100-homo",
+                "--schema",
+                "4uniform-ips",
+                "-n",
+                "3"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        },
+        {
+            "name": "P-G-MMSE-run",
+            "type": "python",
+            "request": "launch",
+            "program": "P-G-MMSE.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--schema",
+                "8uniform",
+                "--schema",
+                "8uniform-ips",
+                "--schema",
+                "4uniform",
+                "--schema",
+                "4uniform-ips",
+                "--schema",
+                "2uniform",
+                "--schema",
+                "2uniform-ips",
+                "-n",
+                "3",
+                "-t",
+                "0.2"
+            ]
+        },
+        {
+            "name": "P-G-MMSE-run-lc",
+            "type": "python",
+            "request": "launch",
+            "program": "P-G-MMSE.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--schema",
+                "8uniform",
+                "--schema",
+                "8uniform-lc",
+                "--schema",
+                "4uniform",
+                "--schema",
+                "4uniform-lc",
+                "--schema",
+                "2uniform",
+                "--schema",
+                "2uniform-lc",
+                "-n",
+                "8",
+                "-t",
+                "0.2"
+            ]
+        },
+        {
+            "name": "data-gen-L100N4K40-hete",
+            "type": "python",
+            "request": "launch",
+            "program": "fl-dataset-generate.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-n",
+                "10",
+                "-t",
+                "data/tmp"
+            ]
+        },
+        {
+            "name": ".show-pids",
+            "type": "python",
+            "request": "launch",
+            "program": ".vscode/show-pids.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

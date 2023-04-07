@@ -1,0 +1,218 @@
+{
+    "G-MMSE": [
+        {
+            "name": "test",
+            "type": "python",
+            "request": "launch",
+            "program": "multi-G-MMSE.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--schema",
+                "2uniform",
+                "-n",
+                "1"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        },
+        {
+            "name": "only",
+            "type": "python",
+            "request": "launch",
+            "program": "multi-G-MMSE.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--schema",
+                "3uniform",
+                "--schema",
+                "4uniform",
+                "--schema",
+                "2uniform",
+                "--schema",
+                "2nonuniform",
+                "-n",
+                "10"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        },
+        {
+            "name": "lc",
+            "type": "python",
+            "request": "launch",
+            "program": "multi-G-MMSE.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--schema",
+                "8uniform",
+                "--schema",
+                "8uniform-lc",
+                "--schema",
+                "4uniform",
+                "--schema",
+                "4uniform-lc",
+                "--schema",
+                "2uniform",
+                "--schema",
+                "2uniform-lc",
+                "-n",
+                "10"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        },
+        {
+            "name": "ips",
+            "type": "python",
+            "request": "launch",
+            "program": "multi-G-MMSE.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--schema",
+                "8uniform",
+                "--schema",
+                "8uniform-ips",
+                "--schema",
+                "4uniform",
+                "--schema",
+                "4uniform-ips",
+                "--schema",
+                "2uniform",
+                "--schema",
+                "2uniform-ips",
+                "-n",
+                "10"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        }
+    ],
+    "Z": [
+        {
+            "name": "research2",
+            "type": "python",
+            "request": "launch",
+            "program": "Z-research.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-s",
+                "data/L100N4K40p100-homo",
+                "--schema",
+                "2uniform-ips",
+                "-n",
+                "3"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        },
+        {
+            "name": "research4",
+            "type": "python",
+            "request": "launch",
+            "program": "Z-research.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-s",
+                "data/L100N4K40p100-homo",
+                "--schema",
+                "4uniform-ips",
+                "-n",
+                "3"
+            ],
+            "description": "this configuration well be configured into launch.json automatically. "
+        }
+    ],
+    "P-G-MMSE": [
+        {
+            "name": "run",
+            "type": "python",
+            "request": "launch",
+            "program": "P-G-MMSE.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--schema",
+                "8uniform",
+                "--schema",
+                "8uniform-ips",
+                "--schema",
+                "4uniform",
+                "--schema",
+                "4uniform-ips",
+                "--schema",
+                "2uniform",
+                "--schema",
+                "2uniform-ips",
+                "-n",
+                "3",
+                "-t",
+                "0.2"
+            ]
+        },
+        {
+            "name": "run-lc",
+            "type": "python",
+            "request": "launch",
+            "program": "P-G-MMSE.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--schema",
+                "8uniform",
+                "--schema",
+                "8uniform-lc",
+                "--schema",
+                "4uniform",
+                "--schema",
+                "4uniform-lc",
+                "--schema",
+                "2uniform",
+                "--schema",
+                "2uniform-lc",
+                "-n",
+                "8",
+                "-t",
+                "0.2"
+            ]
+        }
+    ],
+    "data-gen": [
+        {
+            "name": "L100N4K40-hete",
+            "type": "python",
+            "request": "launch",
+            "program": "fl-dataset-generate.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-n",
+                "10",
+                "-t",
+                "data/tmp"
+            ]
+        }
+    ],
+    "similar": [
+        {
+            "name": "in-space",
+            "type": "python",
+            "request": "launch",
+            "program": "LC-simiar.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": []
+        },
+        {
+            "name": "L100N4K40-hete",
+            "type": "python",
+            "request": "launch",
+            "program": "LC-simiar.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--inverse"
+            ]
+        }
+    ]
+}
